@@ -33,3 +33,8 @@ class Frame(tk.Frame):
         self.root = root
         self.pack()
         self.config(bg='Tan')
+        
+    def campos_pelicula(self):
+        self.label_nombre = tk.Label(self, text='Nombre: ')
+        self.label_nombre.config(font=('Arial', 12, 'bold'))
+        self.label_nombre.grid(row=0, column=0)
